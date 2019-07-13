@@ -57,4 +57,4 @@ php を活用した web アプリの制作の学習用として伝言板のア�
 - <https://knowledge.sakura.ad.jp/13265/> - Docker入門
 - <https://www.php-fig.org/> - PHP FIG 公式
 - <https://packagist.org/> - Packagist (Composer のメインレポジトリサービス)
-- [https://github.com/Becom-Developer/textbook/blob/master/docker_dev.md](docker_dev) - docker_dev
+- [docker_dev](https://github.com/Becom-Developer/textbook/blob/master/docker_dev.md) - docker_dev

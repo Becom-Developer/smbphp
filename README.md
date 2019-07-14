@@ -74,13 +74,32 @@ Composer version 1.8.6 2019-06-11 15:03:05
 (composer.phar は実行したディレクトリに存在することに注意)
 ```
 
+Composer コマンドを使いやすくしておく
+
+```
+(composer.phar はそれ自体がphpの実行ファイルになっている)
+$ ~/composer.phar
+
+(大抵は composer としてのコマンドとして使うことが多いので変更)
+$ mv ~/composer.phar ~/bin/composer
+
+(~/bin/ ディレクトリにパスが通っているものとしている)
+$ composer
+
+(composer コマンドは sudo 権限などでは活用しないほうがよさそう)
+$ which composer
+
+$ which composer
+/Users/yk/bin/composer
+```
+
 web フレームワーク laravel を用意
 
 ```
 (作業ディレクトリに移動)
 $ cd ~/github/smbphp
 (laraver インストール laraver 公式ページ参考)
-$ php ~/composer.phar global require laravel/installer
+$ composer global require laravel/installer
 Changed current directory to /Users/yk/.composer
 ...
 Generating autoload files
@@ -99,7 +118,7 @@ $ mv smbphp/.[^\.]* .
 $ rmdir smbphp
 
 (vendor のファイルをインストール)
-$ php ~/composer.phar install
+$ composer install
 
 (開発サーバー起動)
 $ php artisan serve

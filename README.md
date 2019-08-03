@@ -107,6 +107,7 @@ Generating autoload files
 
 (パスを通す、そのあと一度ターミナルを再起動)
 $ echo 'export PATH="$HOME/.composer/vendor/bin:$PATH"' >> ~/.bash_profile
+$ exec $SHELL -l
 
 (プロジェクトを作成)
 $ laravel new smbphp

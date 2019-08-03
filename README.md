@@ -146,7 +146,21 @@ $ composer create-project --prefer-dist laravel/laravel smbphp
 
 ### LOCAL
 
+他の端末で作業環境を構築(Mac)
 
+```
+(任意のディレクトリに移動)
+$ cd ~/github/
+
+(github より取得)
+$ git clone git@github.com:Becom-Developer/smbphp.git
+
+(取得した作業ディレクトリへ移動)
+$ cd ~/github/smbphp/
+
+(composer をつかい再構築)
+$ composer install
+```
 
 ## START APP
 

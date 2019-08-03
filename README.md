@@ -88,8 +88,6 @@ $ composer
 
 (composer コマンドは sudo 権限などでは活用しないほうがよさそう)
 $ which composer
-
-$ which composer
 /Users/yk/bin/composer
 ```
 
@@ -109,10 +107,21 @@ Generating autoload files
 $ echo 'export PATH="$HOME/.composer/vendor/bin:$PATH"' >> ~/.bash_profile
 $ exec $SHELL -l
 
+(laravel コマンド確認)
+$ which laravel
+/Users/yk/.composer/vendor/bin/laravel
+
 (プロジェクトを作成)
 $ laravel new smbphp
 Crafting application...
 ...
+
+(開発サーバーを起動して確認)
+$ php ~/github/smbphp/smbphp/artisan serve
+Laravel development server started: <http://127.0.0.1:8000>
+...
+
+(もしここでエラーがでるようなら下記の composer 方法でプロジェクトを作成)
 
 (ディレクトリ階層を一つ上げておく、隠しファイルも含めて)
 $ mv smbphp/.[^\.]* .
@@ -127,6 +136,13 @@ Laravel development server started: <http://127.0.0.1:8000>
 ...
 ^C
 (control + c で終了)
+```
+
+laravel で新しくプロジェクトを作る別のコマンド
+
+```
+(composer を使うやり方)
+$ composer create-project --prefer-dist laravel/laravel smbphp
 ```
 
 ### LOCAL

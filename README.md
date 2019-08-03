@@ -148,6 +148,8 @@ $ composer create-project --prefer-dist laravel/laravel smbphp
 
 他の端末で作業環境を構築(Mac)
 
+.gitignore で git 管理されていないものがあることに注意
+
 ```
 (任意のディレクトリに移動)
 $ cd ~/github/
@@ -158,8 +160,15 @@ $ git clone git@github.com:Becom-Developer/smbphp.git
 (取得した作業ディレクトリへ移動)
 $ cd ~/github/smbphp/
 
-(composer をつかい再構築)
+(composer をつかい再構築 vendor ディレクトリの中身ができる)
 $ composer install
+
+(.env ファイルを作成後 APP_KEY 作成)
+$ cp .env.example .env
+$ php artisan key:generate
+
+(開発サーバー起動)
+$ php artisan serve
 ```
 
 ## START APP

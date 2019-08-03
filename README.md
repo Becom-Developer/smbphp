@@ -120,15 +120,14 @@ Crafting application...
 $ php ~/github/smbphp/smbphp/artisan serve
 Laravel development server started: <http://127.0.0.1:8000>
 ...
+(control + c で終了)
 
-(もしここでエラーがでるようなら下記の composer 方法でプロジェクトを作成)
+(もしここでエラーがでるようなら下記の composer の方法でプロジェクトを作成)
 
 (ディレクトリ階層を一つ上げておく、隠しファイルも含めて)
+$ mv smbphp/* .
 $ mv smbphp/.[^\.]* .
 $ rmdir smbphp
-
-(vendor のファイルをインストール)
-$ composer install
 
 (開発サーバー起動)
 $ php artisan serve

@@ -164,6 +164,7 @@ Laravel development server started: <http://127.0.0.1:8000>
 
 - <https://www.php.net/> - PHP 公式ページ
 - <https://laravel.com/> - web フレームワーク Laravel 公式
+- <http://laravel.jp/> - web フレームワーク Laravel 日本語
 - <https://www.docker.com/> - docker 公式
 - <https://github.com/php-book/php-qa-plaza> - はじめての PHP プロフェッショナル開発
 - <https://knowledge.sakura.ad.jp/13265/> - Docker入門
